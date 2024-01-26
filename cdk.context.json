@@ -1,0 +1,9 @@
+{
+  "dynr53/allowed_zones": {
+    "example.com": {
+      "allowed_records": [
+        "vpn"
+      ]
+    }
+  }
+}

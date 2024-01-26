@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+mangum = "*"
+aws-lambda-powertools = "*"
+jmespath = "*"
+aws-xray-sdk = "*"
+boto3 = "*"
+pydantic-settings = "*"
+# TODO: Implement salted password hashes
+#argon2-cffi = "*"
+
+[dev-packages]
+aws-cdk-lib = "==2.116.1"
+constructs = "<11.0.0,>=10.0.0"
+uvicorn = {extras = ["standard"], version = "*"}
+"aws-cdk.aws-lambda-python-alpha" = "*"
+httpx = "*"
+moto = {extras = ["ec2", "all", "s3"], version = "*"}
+"cloudsnorkel.cdk-turbo-layers" = "*"
+
+[requires]
+python_version = "3.9"
