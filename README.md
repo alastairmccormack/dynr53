@@ -3,6 +3,10 @@
 Packaged in a simple to use CDK stack, Dynr53 is a lightweight AWS Lambda script to update Route53 using the Dyndns2
 "spec", as supported by ddclient and used in many routers such as OpenWRT and Ubiquiti USG + UDMs.
 
+## Dependencies
+
+Pipenv: https://pipenv.pypa.io/en/latest/
+
 ## Configuration
 
 ### Allowed Zones / Domains
@@ -30,7 +34,8 @@ Dynr53 to modify.
 ## Installation
 
 ```commandline
-cdk deploy
+pipenv install -d
+pipenv run cdk deploy
 ```
 
 The Lambda URL is printed along with a link to help you find the auto generated password in AWS Secrets Manager.
