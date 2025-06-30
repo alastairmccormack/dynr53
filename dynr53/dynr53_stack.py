@@ -28,7 +28,7 @@ class Dynr53Stack(aws_cdk.Stack):
             scope=self,
             id='deps_layer',
             architecture=aws_cdk.aws_lambda.Architecture.ARM_64,
-            runtime=aws_cdk.aws_lambda.Runtime.PYTHON_3_9,
+            runtime=aws_cdk.aws_lambda.Runtime.PYTHON_3_13,
             type=cloudsnorkel.cdk_turbo_layers.DependencyPackagerType.LAMBDA
         )
 
@@ -40,7 +40,7 @@ class Dynr53Stack(aws_cdk.Stack):
                 path='lambda',
             ),
             handler='index.handler',
-            runtime=aws_cdk.aws_lambda.Runtime.PYTHON_3_9,
+            runtime=aws_cdk.aws_lambda.Runtime.PYTHON_3_13,
             timeout=aws_cdk.Duration.minutes(1),
             memory_size=256,
             log_retention=aws_cdk.aws_logs.RetentionDays.THREE_MONTHS,
