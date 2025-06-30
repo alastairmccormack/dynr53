@@ -27,7 +27,7 @@ settings = Settings()
 
 app = FastAPI(
     title='Dynr53',
-    version='0.1.1',
+    version='0.2.0',
     default_response_class=PlainTextResponse,
     docs_url=None if not settings.public_docs else '/docs',
     redoc_url=None if not settings.public_docs else '/redoc',
