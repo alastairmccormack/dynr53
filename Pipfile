@@ -15,8 +15,8 @@ pydantic-settings = "*"
 #argon2-cffi = "*"
 
 [dev-packages]
-aws-cdk-lib = "==2.116.1"
-constructs = "<11.0.0,>=10.0.0"
+aws-cdk-lib = "*"
+constructs = "*"
 uvicorn = {extras = ["standard"], version = "*"}
 "aws-cdk.aws-lambda-python-alpha" = "*"
 httpx = "*"
@@ -24,4 +24,4 @@ moto = {extras = ["ec2", "all", "s3"], version = "*"}
 "cloudsnorkel.cdk-turbo-layers" = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.13"
