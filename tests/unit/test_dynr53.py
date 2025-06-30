@@ -5,15 +5,14 @@ import os
 
 import httpx
 import jmespath
-import moto
+from moto import mock_aws
 import boto3
 import uvicorn
 
 from fastapi.testclient import TestClient
 
 
-@moto.mock_secretsmanager
-@moto.mock_route53
+@mock_aws
 class TestDynR53(unittest.TestCase):
     ip = '1.1.1.1'
     domain_name = 'example.com'
